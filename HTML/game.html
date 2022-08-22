@@ -5,10 +5,9 @@
     <title>DONT KILL BEE</title>
     <link rel="stylesheet" href="../STYLES/game.css">
     <link rel="shortcut icon" href="../IMAGENS/pernilongo.png"/>
-    <script src="../JS/game.js"></script>
+    <script src="../JS/game.js"></script>    
   </head>
   <body onresize="tamanhoTela()">
-        
     <div class="painel">
       <div class="vidas">
         <img id="v1" draggable="false" src="../IMAGENS/coracao_cheio.png">
@@ -16,13 +15,15 @@
         <img id="v3" draggable="false" src="../IMAGENS/coracao_cheio.png">
       </div>
       <div class="cronometro">
-         Tempo Restante: <span id="gameTime"></span>
+        Tempo restante: <span id="tempoJogo"></span>
       </div>
     </div>
-      <script>
-        document.getElementById('gameTime').innerHTML = tempo;
-       var criarMosquito = setInterval (function() {randomPosition()}, 2000);
-      </script>      
+    <script>
+      document.getElementById('tempoJogo').innerHTML = tempo;
+      criarMosquitos = setInterval(() => {
+        gerarMosquito();
+        gerarAbelhas();
+      }, 2000);
+    </script>
   </body>
 </html>
-
