@@ -42,7 +42,7 @@ posx = posx < 0?0:posx;
 posy = posy < 0?0:posy;
 
 var mosquito = document.createElement('img');
-mosquito.src='imagem/mosquito.png';
+mosquito.src='../IMAGENS/pernilongo.png';
 document.body.appendChild(mosquito);
 
 mosquito.className = tamanhoMosquito() + ' ' + aleatory();
@@ -107,5 +107,3 @@ function dificuldadeJogo() {
 }
 
 dificuldadeJogo();
-
-
