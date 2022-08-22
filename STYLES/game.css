@@ -9,10 +9,10 @@
     height: 100%;
   }
   body {
-    background-image: url("../IMAGENS/bg.png");
+    background-image: url('../IMAGENS/bg.png');
     background-repeat: no-repeat;
     background-size: cover !important;
-    cursor: url("../IMAGENS/arma_taco.png"), auto;
+    cursor: url('../IMAGENS/arma_taco.png'), auto;
     width: 100%;
     height: 100%;
   }
