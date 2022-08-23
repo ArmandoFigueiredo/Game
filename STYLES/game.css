@@ -19,7 +19,7 @@
   }
 
   body#pg-index {
-    background-image: url('../IMAGENS/inicio.png ');
+    background-image: url('../IMAGENS/inicio\ 2.png');
     background-position: 10%;
   }
 
@@ -38,8 +38,8 @@
     left:50%;
     margin-left: -97px;
     bottom: 3%;
-    color: #fff;
-    font-size: 50px;
+    color: #f8d92c;
+    font-size: 45px;
     text-decoration: none;
   }
 
@@ -49,6 +49,7 @@
 
   #lnk-reiniciar:hover {
     color: #f00;
+    transition: all 1.5s ease-out;
     }
 
   .btn-container {
@@ -60,11 +61,12 @@
 
   .btn-container select, .btn-container a {
     font-size: 40px;
-    padding: 10px;
+    padding: 10px;  
   }
 
   .btn-container a:hover {
     color: #f00;
+    transition: all 1.5s ease-out;
   }
 
   .mosq01 {
