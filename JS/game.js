@@ -10,7 +10,7 @@ function iniciarJogo() {
   if (nivel == "") {
     alert("Escolha um nível primeiro!");
   } else {
-    window.location.href = "../game.html?" + nivel;
+    window.location.href = "./game.html?" + nivel;
   }
 }
 
@@ -46,9 +46,9 @@ resetarTempo = setInterval(function() {
     clearInterval(criarMosquitos);
     
     if(abelhas_mortas == 0)
-      window.location.href = "../win_game.html";
+      window.location.href = "./win_game.html";
     else
-      window.location.href = "../game_over.html";
+      window.location.href = "./game_over.html";
       
   } else {
     document.getElementById('tempoJogo').innerHTML = tempo;
@@ -77,24 +77,24 @@ function gerarMosquito() {
     document.getElementById('tempoMosquito').remove();
 
     if (vidas <= 0) {
-      window.location.href = "../HTML/game_over.html";
+      window.location.href = "./HTML/game_over.html";
     } else {
       vidaVazia = document.getElementById('v' + vidas);
-      vidaVazia.src = "../IMAGENS/coracao_vazio.png";
+      vidaVazia.src = "./IMAGENS/coracao_vazio.png";
       vidaVazia.draggable = false;
       vidas++;
     }
   }
 
   mosquito = document.createElement('img');
-  mosquito.src = '../IMAGENS/pernilongo.png';
+  mosquito.src = './IMAGENS/pernilongo.png';
   mosquito.className = 'mosq0' + tamanhoMosquito();
   mosquito.style.position = 'absolute';
   mosquito.style.transform = "translate(" + posicaoMosquito() + ") scaleX(" + direcaoMosquito() + ")";
   mosquito.id = 'tempoMosquito';
   mosquito.draggable = false;
   mosquito.onclick = function () {
-    new Audio("../SONS/sons_SPLAT.mp3").play();
+    new Audio("./SONS/sons_SPLAT.mp3").play();
     this.remove();
     mosquito_mortos++;
   }
@@ -105,19 +105,19 @@ function gerarMosquito() {
 function gerarAbelhas() {
 
   abelha = document.createElement('img');
-  abelha.src = '../IMAGENS/abelha_1.png';
+  abelha.src = './IMAGENS/abelha_1.png';
   abelha.className = 'mosq0' + tamanhoMosquito();
   abelha.style.position = 'absolute';
   abelha.style.transform = "translate(" + posicaoMosquito() + ") scaleX(" + direcaoMosquito() + ")";
   abelha.id = 'tempoMosquito';
   abelha.draggable = false;
   abelha.onclick = function () {
-    new Audio("../SONS/sons_SPLAT.mp3").play();
+    new Audio("./SONS/sons_SPLAT.mp3").play();
     this.remove();
     abelhas_mortas++;
 
     if(abelhas_mortas >= 3) {
-      window.location.href = "../game_over.html"; 
+      window.location.href = "./game_over.html"; 
     }
   }
 
