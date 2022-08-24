@@ -17,13 +17,13 @@
         Tempo restante: <span id="tempoJogo"></span>
       </div>
     </div>
+    <script src="../JS/game.js"></script>
     <script>
       document.getElementById('tempoJogo').innerHTML = tempo;
       criarMosquitos = setInterval(() => {
         gerarMosquito();
         gerarAbelhas();
       }, 2000);
-    </script>
-    <script src="../JS/game.js"></script>
+    </script>    
   </body>
 </html>
