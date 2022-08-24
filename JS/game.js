@@ -80,7 +80,7 @@ function gerarMosquito() {
       window.location.href = "./HTML/game_over.html";
     } else {
       vidaVazia = document.getElementById('v' + vidas);
-      vidaVazia.src = "./IMAGENS/coracao_vazio.png";
+      vidaVazia.src = "../IMAGENS/coracao_vazio.png";
       vidaVazia.draggable = false;
       vidas++;
     }
@@ -123,3 +123,43 @@ function gerarAbelhas() {
 
   document.body.appendChild(abelha);
 }
+
+function atualizaCursor(dificuldade) {
+  switch(dificuldade) {
+
+    case "":
+      arquivoCursor = "default";
+      break;
+
+    case "normal":        
+      arquivoCursor = "raquete.png";
+      break;
+
+    case "dificil":        
+      arquivoCursor = "arma_taco.png";
+      break;
+
+    case "impossivel":        
+      arquivoCursor = "arma_havaianas.png";
+      break;
+
+  }
+
+  document.body.style.cursor = "url('../IMAGENS/"+arquivoCursor+"'), auto"; 
+}
+
+window.addEventListener('load', () => {
+
+  if(document.getElementById("nivel") != undefined) {
+    
+    document.getElementById("nivel").addEventListener('change', () => {
+      var arquivoCursor = "";
+      atualizaCursor(document.getElementById("nivel").value);
+    });  
+    
+  }
+
+  nivel = window.location.search.replace('?', '');
+  atualizaCursor(nivel);
+
+});

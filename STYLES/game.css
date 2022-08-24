@@ -10,26 +10,25 @@
   }
 
   body {
-    background-image: url('./IMAGENS/bg.png');
+    background-image: url('../IMAGENS/bg.png');
     background-repeat: no-repeat;
     background-size: cover !important;
     width: 100%;
-    height: 100%;
-    cursor:url('./IMAGENS/arma_taco.png') 30 30, auto;
+    height: 100%;    
   }
 
   body#pg-index {
-    background-image: url('./IMAGENS/inicio\ 2.png');
+    background-image: url('../IMAGENS/inicio\ 2.png');
     background-position: 10%;
   }
 
   body#pg-win_game {
-    background-image: url('./IMAGENS/you_win.png');
+    background-image: url('../IMAGENS/you_win.png');
     background-position-y: 69%;
   }
  
   body#pg-game_over {
-    background-image: url('./IMAGENS/game_over.png');
+    background-image: url('../IMAGENS/game_over.png');
     background-position: 10%;
   }
 
