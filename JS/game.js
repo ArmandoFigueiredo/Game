@@ -3,6 +3,7 @@ largura = 0;
 vidas = 1;
 abelhas_mortas = 0;
 mosquito_mortos = 0;
+tempo = 0;
 
 function iniciarJogo() {
   nivel = document.getElementById("nivel").value;
@@ -145,7 +146,7 @@ function atualizaCursor(dificuldade) {
 
   }
 
-  document.body.style.cursor = "url('../IMAGENS/"+arquivoCursor+"'), auto"; 
+  document.body.style.cursor = "url('./IMAGENS/"+arquivoCursor+"'), auto"; 
 }
 
 window.addEventListener('load', () => {
