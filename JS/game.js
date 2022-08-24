@@ -10,7 +10,7 @@ function iniciarJogo() {
   if (nivel == "") {
     alert("Escolha um nível primeiro!");
   } else {
-    window.location.href = "../HTML/game.html?" + nivel;
+    window.location.href = "../game.html?" + nivel;
   }
 }
 
@@ -46,9 +46,9 @@ resetarTempo = setInterval(function() {
     clearInterval(criarMosquitos);
     
     if(abelhas_mortas == 0)
-      window.location.href = "../HTML/win_game.html";
+      window.location.href = "../win_game.html";
     else
-      window.location.href = "../HTML/game_over.html";
+      window.location.href = "../game_over.html";
       
   } else {
     document.getElementById('tempoJogo').innerHTML = tempo;
@@ -117,7 +117,7 @@ function gerarAbelhas() {
     abelhas_mortas++;
 
     if(abelhas_mortas >= 3) {
-      window.location.href = "../HTML/game_over.html"; 
+      window.location.href = "../game_over.html"; 
     }
   }
 
