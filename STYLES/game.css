@@ -113,3 +113,29 @@
     font-weight: bold;
   }
   
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;    
+    padding: 16px 0px 16px 16px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 18px 18px 0px 0px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+  }
+  
+  .footer a:hover {
+    transition: .3s;
+    color: red;
+  }
+  
+  .footer a:not(:hover) {
+    transition: .3s;
+    color: black;
+  }
