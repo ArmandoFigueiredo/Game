@@ -4,4 +4,4 @@ Esse jogo foi feito durante a primeira semana do bootcamp da IronHack WebDev Sã
 
 Para saber mais, veja a apresentação. [clique aqui](https://docs.google.com/presentation/d/14CowcUy1TjlGY2l3Wuoq1iTkOfWnFsETWt-GIu7YOUg/edit?usp=sharing).
 
-Para jogar, [clique aqui](https://github.com/ArmandoFigueiredo/Game).
+Para jogar, [clique aqui](https://armandofigueiredo.github.io/Game/).
